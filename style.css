@@ -1,0 +1,168 @@
+.calculator {
+    max-width: 350px;
+    width: fit-content;
+    background-color: #3a4655;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+
+input[type=text] {
+    width: 330px;
+    height: 25px;
+    text-align: right;
+    border: 0px;
+    background-color: #FCFCFC;
+    /* color: #d9d9d9; */
+    outline: none;
+    /* padding: 0 5px 0 5px; */
+
+
+}
+
+#s1 {
+    border-radius: 5px 5px 0 0;
+    margin: 0 0px 0px 5px;
+}
+
+#s2 {
+    border-radius: 0 0 5px 5px;
+    margin: 0 0px 10px 5px;
+}
+
+.calc-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+button {
+    margin: 3px;
+    width: 63px;
+    border: none;
+    height: 25px;
+    border-radius: 4px;
+    color: #000000;
+    cursor: pointer;
+}
+
+button:hover {
+    /* background-color: hsla(180, 100%, 40%, 0.3); */
+    transition: .2s;
+}
+
+.btns {
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.m-btns {
+    background-color: #404d5e;
+}
+
+.equal {
+    background-color: #9b866c;
+    color: white;
+}
+
+.num {
+    background-color: grey;
+    color: white;
+}
+
+.num:hover {
+    background-color: #DADCE0;
+    color: black;
+}
+
+.basic-op,
+.cmplx-stuff {
+    background-color: #DADCE0;
+}
+
+/* .basic-op,
+.cmplx-stuff:hover {
+    background-color: #404d5e;
+} */
+
+
+
+/* Loader Trial
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+#myDiv {
+    display: none;
+    text-align: center;
+} */
