@@ -15,8 +15,8 @@
     </center>
     <!-- <div id="loader"></div> -->
     <div class="calculator">
-        <input type="text" id="s1" maxlength="20" oninput="calculate()">
-        <input type="text" id="s2" maxlength="20" readonly>
+        <input type="text" id="n1" maxlength="20" oninput="calculate()">
+        <input type="text" id="n2" maxlength="20" readonly>
         <div class="calc-buttons">
 
             <div class="btns">
@@ -25,40 +25,53 @@
                 <button class="m-btn">M+</button>
                 <button class="m-btn">M-</button>
                 <button class="m-btn">MS</button>
+                <button class="complx-stuff">Sin</button>
+                <button class="complx-stuff">Cos</button>
+                <button class="complx-stuff">Tan</button>
+                <button class="complx-stuff" onclick="btnclear();">C</button>
+                <button class="complx-stuff" onclick="btnback();">&#x232b;</button>
+                <button class="complx-stuff">Cot</button>
+                <button class="complx-stuff">Cosec</button>
+                <button class="complx-stuff">Sec</button>
+                <button class="complx-stuff" onclick="btnclick('\(');">(</button>
+                <button class="complx-stuff" onclick="btnclick('\)');">)</button>
                 <button class="complx-stuff">2<sup>nd</sup></button>
                 <button class="complx-stuff" onclick="pi();">&pi;</button>
                 <button class="complx-stuff" onclick="e();">e</button>
-                <button class="complx-stuff" onclick="btnclear();">C</button>
-                <button class="complx-stuff" onclick="btnback();">&#x232b;</button>
+                <!-- <button class="complx-stuff" onclick="btnclear();">C</button> -->
+                <!-- <button class="complx-stuff" onclick="btnback();">&#x232b;</button> -->
                 <button class="complx-stuff" onclick="btnsquare();">&#119909;&#178;</button>
                 <button class="complx-stuff" onclick="btnfrac();"> &#8543;&#x2093;</button>
                 <button class="complx-stuff" onclick="abs();">| x |</button>
                 <button class="complx-stuff">exp</button>
                 <button class="complx-stuff">mod</button>
                 <button class="complx-stuff" onclick="btnsqrt()">2&radic;x</button>
-                <button class="complx-stuff" onclick="btnclick('\(');">(</button>
-                <button class="complx-stuff" onclick="btnclick('\)');">)</button>
+                <!-- <button class="complx-stuff" onclick="btnclick('\(');">(</button>
+                <button class="complx-stuff" onclick="btnclick('\)');">)</button> -->
                 <button class="complx-stuff" onclick="fact();">&#119899;!</button>
-                <button class="basic-op" onclick="opclick('/');">÷</button>
+                <!-- <button class="basic-op" onclick="opclick('/');">÷</button> -->
                 <button class="complx-stuff" onclick="exp();">x<sup>y</sup></button>
                 <button class="num" onclick="btnclick(7);">7</button>
                 <button class="num" onclick="btnclick(8);">8</button>
                 <button class="num" onclick="btnclick(9);">9</button>
-                <button class="basic-op" onclick="opclick('*');">x</button>
+                <button class="basic-op" onclick="opclick('/');">÷</button>
+                <!-- <button class="basic-op" onclick="opclick('*');">x</button> -->
                 <button class="complx-stuff">10<sup>x</sup></button>
                 <button class="num" onclick="btnclick(4);">4</button>
                 <button class="num" onclick="btnclick(5);">5</button>
                 <button class="num" onclick="btnclick(6);">6</button>
-                <button class="basic-op" onclick="opclick('-');">-</button>
+                <button class="basic-op" onclick="opclick('*');">x</button>
+                <!-- <button class="basic-op" onclick="opclick('-');">-</button> -->
                 <button class="complx-stuff">log</button>
                 <button class="num" onclick="btnclick(1);">1</button>
                 <button class="num" onclick="btnclick(2);">2</button>
                 <button class="num" onclick="btnclick(3);">3</button>
-                <button class="basic-op" onclick="opclick('+');">+</button>
+                <button class="basic-op" onclick="opclick('-');">-</button>
                 <button class="complx-stuff">ln</button>
                 <button class="num" onclick="btnplusminus();">+/-</button>
                 <button class="num" onclick="btnclick(0);">0</button>
                 <button class="num">.</button>
+                <button class="basic-op" onclick="opclick('+');">+</button>
                 <button class="equal" onclick="btnequal();">=</button>
             </div>
         </div>
