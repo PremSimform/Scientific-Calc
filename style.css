@@ -10,9 +10,10 @@
 
 
 input[type=text] {
-    width: 340px;
+    width: 338px;
     height: 25px;
     text-align: right;
+    margin-left: 4px;
     border: 0px;
     box-shadow: #000000;
     /* border-top-left-radius: 10px;
@@ -25,17 +26,18 @@ input[type=text] {
 
 }
 
-#s1 {
+#n1 {
     border-radius: 5px 5px 0 0;
-    margin: 0 0px px 5px;
+    margin: 0 0px 0px 5px;
 }
 
-#s2 {
+#n2 {
     border-radius: 0 0 5px 5px;
     margin: 0 0px 10px 5px;
 }
 
 .calc-buttons {
+    margin-top: 2px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -56,11 +58,6 @@ button {
     cursor: pointer;
 }
 
-/* back {
-    background-color: goldenrod;
-    color: white;
-} */
-
 button:hover {
     /* background-color: hsla(180, 100%, 40%, 0.3); */
     transition: .2s;
@@ -78,8 +75,8 @@ button:hover {
 }
 
 .equal {
-    background-color: lightgray;
-    color: black;
+    background-color: #9b866c;
+    color: white;
     width: 100%;
 }
 

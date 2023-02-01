@@ -108,7 +108,47 @@ function fact() {
 function exp() {
     val1.value += "**"
 }
+function btnsin() {
+    y = val1.value;
+    val1.value = "Sin(" + y + ")";
+    x = Math.sin(y * Math.PI / 180).toFixed(2);
+    val2.value = x;
 
+}
+function btncos() {
+    y = val1.value;
+    val1.value = "Cos(" + y + ")";
+    x = Math.cos(y * Math.PI / 180).toFixed(2);
+    val2.value = x;
+
+}
+function btntan() {
+    y = val1.value;
+    val1.value = "Tan(" + y + ")";
+    x = Math.tan(y * Math.PI / 180).toFixed(2);
+    val2.value = x;
+
+}
+function btnsec() {
+    y = val1.value;
+    val1.value = "Sec(" + y + ")";
+    x = (1 / Math.cos(y * Math.PI / 180)).toFixed(2);
+    val2.value = x;
+
+}
+function btncosec() {
+    y = val1.value;
+    val1.value = "Cosec(" + y + ")";
+    x = (1 / Math.sin(y * Math.PI / 180)).toFixed(2);
+    val2.value = x;
+}
+function btncot() {
+    y = val1.value;
+    val1.value = "Cot(" + y + ")";
+    x = (1 / Math.tan(y * Math.PI / 180)).toFixed(2);
+    val2.value = x;
+
+}
 
 
 

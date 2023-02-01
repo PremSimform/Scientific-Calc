@@ -15,6 +15,12 @@
     </center>
     <!-- <div id="loader"></div> -->
     <div class="calculator">
+        <img src="sp.png" style="width: 340px; border: 0.5px solid black; border-radius: 5px; margin-left:3px;">
+        <div class="casio"
+            style="display: flex; align-content: center; justify-content: space-between; margin-top: -5px; padding-left: 2px;;">
+            <h3 style="color:aliceblue;">CASIO</h3>
+            <p style="color:aliceblue; margin-left:-35px;">fx-260 solar</p>
+        </div>
         <input type="text" id="n1" maxlength="20" oninput="calculate()">
         <input type="text" id="n2" maxlength="20" readonly>
         <div class="calc-buttons">
@@ -25,14 +31,14 @@
                 <button class="m-btn">M+</button>
                 <button class="m-btn">M-</button>
                 <button class="m-btn">MS</button>
-                <button class="complx-stuff">Sin</button>
-                <button class="complx-stuff">Cos</button>
-                <button class="complx-stuff">Tan</button>
+                <button class="complx-stuff" onclick="btnsin()">Sin</button>
+                <button class="complx-stuff" onclick="btncos()">Cos</button>
+                <button class="complx-stuff" onclick="btntan()">Tan</button>
                 <button class="complx-stuff" onclick="btnclear();">C</button>
                 <button class="complx-stuff" onclick="btnback();">&#x232b;</button>
-                <button class="complx-stuff">Cot</button>
-                <button class="complx-stuff">Cosec</button>
-                <button class="complx-stuff">Sec</button>
+                <button class="complx-stuff" onclick="btncot()">Cot</button>
+                <button class="complx-stuff" onclick="btncosec()">Cosec</button>
+                <button class="complx-stuff" onclick="btnsec()">Sec</button>
                 <button class="complx-stuff" onclick="btnclick('\(');">(</button>
                 <button class="complx-stuff" onclick="btnclick('\)');">)</button>
                 <button class="complx-stuff">2<sup>nd</sup></button>
