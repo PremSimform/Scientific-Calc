@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The code is a implementation of a scientific calculator using HTML, CSS and JavaScript. It consists of HTML for the structure of the calculator, CSS for styling the calculator to look aesthetically pleasing and JavaScript for providing the calculator with its functionality. The HTML will define the elements for the calculator's display and buttons, CSS will provide the styles for the elements, and JavaScript will handle the calculator's logic and calculations.">
     <link rel="stylesheet" href="style.css">
     <title>Scientific Calculator</title>
 </head>
@@ -13,7 +15,6 @@
     <center>
         <h1>Scientific Calculator | Prem Mehta</h1>
     </center>
-    <!-- <div id="loader"></div> -->
     <div class="calculator">
         <img src="sp.png" style="width: 340px; border: 0.5px solid black; border-radius: 5px; margin-left:3px;">
         <div class="casio"
@@ -25,55 +26,78 @@
         <input type="text" id="n2" maxlength="20" readonly>
         <div class="calc-buttons">
 
+            <!-- This is a HTML code block with added comments to describe the purpose of the code -->
+
+            <!-- This is a div element with class "btns" -->
             <div class="btns">
-                <button class="m-btn">MC</button>
-                <button class="m-btn">MR</button>
-                <button class="m-btn">M+</button>
-                <button class="m-btn">M-</button>
-                <button class="m-btn">MS</button>
+
+                <!-- This is a button with class "m-btn" and triggers the "btnmc()" function when clicked -->
+                <button class="m-btn" onclick="btnmc()">MC</button>
+
+                <!-- This is a button with class "m-btn" and triggers the "btnmr()" function when clicked -->
+                <button class="m-btn" onclick="btnmr()">MR</button>
+
+                <!-- This is a button with class "m-btn" and triggers the "btnmplus()" function when clicked -->
+                <button class="m-btn" onclick="btnmplus()">M+</button>
+
+                <!-- This is a button with class "m-btn" and triggers the "btnmminus()" function when clicked -->
+                <button class="m-btn" onclick="btnmminus()">M-</button>
+
+                <!-- This is a button with class "m-btn" and triggers the "btnms()" function when clicked -->
+                <button class="m-btn" onclick="btnms()">MS</button>
+
+                <!-- This is a button with class "complx-stuff" and triggers the "btnsin()" function when clicked -->
                 <button class="complx-stuff" onclick="btnsin()">Sin</button>
+
+                <!-- This is a button with class "complx-stuff" and triggers the "btncos()" function when clicked -->
                 <button class="complx-stuff" onclick="btncos()">Cos</button>
+
+                <!-- This is a button with class "complx-stuff" and triggers the "btntan()" function when clicked -->
                 <button class="complx-stuff" onclick="btntan()">Tan</button>
+
+                <!-- This is a button with class "complx-stuff" and triggers the "btnclear()" function when clicked -->
                 <button class="complx-stuff" onclick="btnclear();">C</button>
+
+                <!-- This is a button with class "complx-stuff" and triggers the "btnback()" function when clicked -->
                 <button class="complx-stuff" onclick="btnback();">&#x232b;</button>
+
+                <!-- This is a button with class "complx-stuff" and triggers the "btncot()" function when clicked -->
                 <button class="complx-stuff" onclick="btncot()">Cot</button>
+
+                <!-- This is a button with class "complx-stuff" and triggers the "btncosec()" function when clicked -->
                 <button class="complx-stuff" onclick="btncosec()">Cosec</button>
+
+                <!-- This is a button with class "complx-stuff" and triggers the "btnsec()" function when clicked -->
                 <button class="complx-stuff" onclick="btnsec()">Sec</button>
+
                 <button class="complx-stuff" onclick="btnclick('\(');">(</button>
                 <button class="complx-stuff" onclick="btnclick('\)');">)</button>
                 <button class="complx-stuff">2<sup>nd</sup></button>
                 <button class="complx-stuff" onclick="pi();">&pi;</button>
                 <button class="complx-stuff" onclick="e();">e</button>
-                <!-- <button class="complx-stuff" onclick="btnclear();">C</button> -->
-                <!-- <button class="complx-stuff" onclick="btnback();">&#x232b;</button> -->
                 <button class="complx-stuff" onclick="btnsquare();">&#119909;&#178;</button>
                 <button class="complx-stuff" onclick="btnfrac();"> &#8543;&#x2093;</button>
-                <button class="complx-stuff" onclick="abs();">| x |</button>
-                <button class="complx-stuff">exp</button>
-                <button class="complx-stuff">mod</button>
+                <button class="complx-stuff" onclick="btnmodulus();">| x |</button>
+                <button class="complx-stuff" onclick="btnclick('e');">exp</button>
+                <button class="complx-stuff" onclick="btnclick('%')">mod</button>
                 <button class="complx-stuff" onclick="btnsqrt()">2&radic;x</button>
-                <!-- <button class="complx-stuff" onclick="btnclick('\(');">(</button>
-                <button class="complx-stuff" onclick="btnclick('\)');">)</button> -->
                 <button class="complx-stuff" onclick="fact();">&#119899;!</button>
-                <!-- <button class="basic-op" onclick="opclick('/');">÷</button> -->
                 <button class="complx-stuff" onclick="exp();">x<sup>y</sup></button>
                 <button class="num" onclick="btnclick(7);">7</button>
                 <button class="num" onclick="btnclick(8);">8</button>
                 <button class="num" onclick="btnclick(9);">9</button>
                 <button class="basic-op" onclick="opclick('/');">÷</button>
-                <!-- <button class="basic-op" onclick="opclick('*');">x</button> -->
-                <button class="complx-stuff">10<sup>x</sup></button>
+                <button class="complx-stuff" onclick="btn10x()">10<sup>x</sup></button>
                 <button class="num" onclick="btnclick(4);">4</button>
                 <button class="num" onclick="btnclick(5);">5</button>
                 <button class="num" onclick="btnclick(6);">6</button>
                 <button class="basic-op" onclick="opclick('*');">x</button>
-                <!-- <button class="basic-op" onclick="opclick('-');">-</button> -->
-                <button class="complx-stuff">log</button>
+                <button class="complx-stuff" onclick="btnlog()">log</button>
                 <button class="num" onclick="btnclick(1);">1</button>
                 <button class="num" onclick="btnclick(2);">2</button>
                 <button class="num" onclick="btnclick(3);">3</button>
                 <button class="basic-op" onclick="opclick('-');">-</button>
-                <button class="complx-stuff">ln</button>
+                <button class="complx-stuff" onclick="btnln()">ln</button>
                 <button class="num" onclick="btnplusminus();">+/-</button>
                 <button class="num" onclick="btnclick(0);">0</button>
                 <button class="num">.</button>

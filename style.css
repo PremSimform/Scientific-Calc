@@ -1,3 +1,8 @@
+/* This CSS sets the styles for a calculator component.
+The calculator has a max-width of 350px and width set to fit its content.
+It has a background color of #3a4655 and a padding of 20px.
+The border has a radius of 10px and has a box-shadow effect.
+The calculator is centered horizontally within the page with a 10px margin. */
 .calculator {
     max-width: 350px;
     width: fit-content;
@@ -8,7 +13,11 @@
     margin: 10px auto;
 }
 
-
+/* This CSS sets the styles for a text input element.
+The width is 338px and the height is 25px.
+The text alignment is set to the right and there is a 4px margin to the left.
+The border and outline are set to 0 and the box-shadow effect is applied.
+The background color is #FCFCFC.*/
 input[type=text] {
     width: 338px;
     height: 25px;
@@ -22,20 +31,35 @@ input[type=text] {
     /* color: #d9d9d9; */
     outline: none;
     /* padding: 0 5px 0 5px; */
-
-
 }
 
+/* styling for element with id 'n1' /
+/ border-radius: 5px 5px 0 0; - sets rounded corners for top left and top right /
+/ margin: 0 0px 0px 5px; - sets a 5px margin on the left side */
 #n1 {
     border-radius: 5px 5px 0 0;
     margin: 0 0px 0px 5px;
 }
 
+/* Style for the second element with id 'n2' /
+/ Adds rounded bottom left and bottom right corners /
+/ Adds margin at the bottom */
 #n2 {
     border-radius: 0 0 5px 5px;
     margin: 0 0px 10px 5px;
 }
 
+/*
+The ".calc-buttons" class styles the container holding the calculator buttons.
+The "margin-top" property sets a top margin of 2 pixels.
+The "display" property set to "flex" makes the container a flex container,
+aligning its children within it in a flexible way.
+The "flex-wrap" property set to "wrap" allows the children to wrap onto multiple lines
+if there is not enough space to display them on a single line.
+The "justify-content" property set to "space-between" aligns the first and last
+child to the start and end of the container, respectively, and evenly distributes
+any remaining space between the children.
+*/
 .calc-buttons {
     margin-top: 2px;
     display: flex;
@@ -44,10 +68,12 @@ input[type=text] {
 
 }
 
+/* Comment: This style is for the active state of a button. It reduces the size of the button by 10% when it is clicked. */
 button:active {
     transform: scale(0.9);
 }
 
+/* This code defines the styles for a button in the calculator. The button has a margin of 3px, width of 63px, no border, height of 25px, 4px border-radius, black text color (#000000), and a pointer cursor. */
 button {
     margin: 3px;
     width: 63px;
@@ -58,11 +84,12 @@ button {
     cursor: pointer;
 }
 
+/* Add hover effect with a transition time of .2s */
 button:hover {
-    /* background-color: hsla(180, 100%, 40%, 0.3); */
     transition: .2s;
 }
 
+/* This code sets the styles for the ".btns" class in a CSS stylesheet. It sets the width of the elements with this class to 350px and sets the display to "flex" so that the elements will wrap as necessary and have equal space between them.*/
 .btns {
     width: 350px;
     display: flex;
@@ -70,21 +97,25 @@ button:hover {
     justify-content: space-evenly;
 }
 
+/* This sets the background color of the .m-btns class to a shade of blue*/
 .m-btns {
     background-color: #404d5e;
 }
 
+/*This sets the background color of the .equal class to a shade of brown and the text color to white. It also sets the width to 100%*/
 .equal {
     background-color: #9b866c;
     color: white;
     width: 100%;
 }
 
+/* Define styles for numeric buttons */
 .num {
     background-color: grey;
     color: white;
 }
 
+/* Style for numeric button hover */
 .num:hover {
     background-color: #DADCE0;
     color: black;
@@ -94,82 +125,3 @@ button:hover {
 .cmplx-stuff {
     background-color: #DADCE0;
 }
-
-/* .basic-op,
-.cmplx-stuff:hover {
-    background-color: #404d5e;
-} */
-
-
-
-/* Loader Trial
-#loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 120px;
-    height: 120px;
-    margin: -76px 0 0 -76px;
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #3498db;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-.animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
-    }
-
-    to {
-        bottom: 0px;
-        opacity: 1
-    }
-}
-
-@keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
-    }
-
-    to {
-        bottom: 0;
-        opacity: 1
-    }
-}
-
-#myDiv {
-    display: none;
-    text-align: center;
-} */
